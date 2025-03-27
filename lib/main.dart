@@ -46,7 +46,7 @@ class Login extends StatelessWidget {
               children: [
                 SizedBox(
                   width: 400,
-                  height: 55,
+                  height: 50,
                   child: TextField(
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.email),
@@ -82,8 +82,8 @@ class Login extends StatelessWidget {
                 SizedBox(height: 30),
                 Center(
                   child: Container(
-                    width: 400,
-                    height: 50,
+                    width: 200,
+                    height: 45,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(10),

@@ -46,7 +46,7 @@ class Login extends StatelessWidget {
               children: [
                 SizedBox(
                   width: 400,
-                  height: 50,
+                  height: 55,
                   child: TextField(
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.email),
@@ -55,32 +55,30 @@ class Login extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
 
-                      hintText: 'Email',
+                      hintText: 'E-mail',
                       hintStyle: TextStyle(color: Colors.black),
                     ),
                   ),
                 ),
                 SizedBox(height: 20),
-
-                Container(
+                SizedBox(
                   width: 400,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.black),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(padding: EdgeInsets.symmetric(horizontal: 5)),
-                      FaIcon(FontAwesomeIcons.lock, color: Colors.black),
-                      Padding(padding: EdgeInsets.symmetric(horizontal: 7)),
-                      Text(
-                        'Senha',
-                        style: TextStyle(color: Colors.black, fontSize: 16),
+                  height: 55,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.lock),
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.black),
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                    ],
+
+                      hintText: 'Senha',
+                      hintStyle: TextStyle(color: Colors.black),
+                    ),
                   ),
                 ),
+
+                
                 SizedBox(height: 30),
                 Center(
                   child: Container(
@@ -92,7 +90,7 @@ class Login extends StatelessWidget {
                     ),
                     child: Center(
                       child: Text(
-                        'Login',
+                        'Entrar',
                         style: TextStyle(color: Colors.white, fontSize: 17),
                         textAlign: TextAlign.center,
                       ),
